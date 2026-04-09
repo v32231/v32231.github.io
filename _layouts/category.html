@@ -1,28 +1,9 @@
 ---
-layout: default
+layout: page
 ---
 {% assign category_posts = site.categories[page.category_name] %}
-<section class="page-hero">
-  <p class="eyebrow">Category</p>
-  <h1>{{ page.title }}</h1>
-  <div class="chip-row">
-    <span class="chip">{{ category_posts | size }} posts</span>
-  </div>
-</section>
-
-<section class="post-grid">
-  {% if category_posts and category_posts.size > 0 %}
-    {% for post in category_posts %}
-      <article class="post-card">
-        <p class="post-date">{{ post.date | date: "%Y.%m.%d" }}</p>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 130 }}</p>
-      </article>
-    {% endfor %}
-  {% else %}
-    <article class="post-card post-card-empty">
-      <h2>아직 글이 없습니다</h2>
-      <p>이 카테고리는 곧 채워질 예정입니다.</p>
-    </article>
-  {% endif %}
-</section>
+<ul>
+  {% for post in category_posts %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

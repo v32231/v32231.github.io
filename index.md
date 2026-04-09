@@ -1,6 +1,10 @@
 ---
-layout: home
+layout: page
 title: Home
-hero_title: v32231.github.io
-hero_description: v32231의 개인 블로그
 ---
+
+<ul>
+{% for post in site.posts limit: 10 %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
