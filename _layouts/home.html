@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">GitHub Pages</p>
+    <h1>{{ page.hero_title | default: site.title }}</h1>
+    <p class="hero-description">{{ page.hero_description | default: site.description }}</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="section-heading">
+    <p class="eyebrow">Categories</p>
+    <h2>Development / CTF/Wargame / BugBounty</h2>
+  </div>
+  <div class="category-grid">
+    {% for category in site.data.categories %}
+      {% assign category_posts = site.categories[category.name] %}
+      <a class="category-card" href="{{ category.url | relative_url }}">
+        <span class="category-count">{{ category_posts | size }} posts</span>
+        <h3>{{ category.label | default: category.name }}</h3>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="section-heading">
+    <p class="eyebrow">Post</p>
+    <h2>Latest</h2>
+  </div>
+  <div class="post-grid">
+    {% for post in site.posts limit: 6 %}
+      <article class="post-card">
+        <p class="post-date">{{ post.date | date: "%Y.%m.%d" }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="chip-row">
+          {% for category_name in post.categories %}
+            {% assign matched_category = site.data.categories | where: "name", category_name | first %}
+            {% if matched_category %}
+              <a class="chip" href="{{ matched_category.url | relative_url }}">{{ matched_category.label | default: category_name }}</a>
+            {% else %}
+              <span class="chip">{{ category_name }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 80 }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

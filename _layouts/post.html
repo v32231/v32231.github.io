@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post-entry">
+  <header class="page-hero">
+    <p class="eyebrow">{{ page.date | date: "%Y.%m.%d" }}</p>
+    <h1>{{ page.title }}</h1>
+    <div class="chip-row">
+      {% for category_name in page.categories %}
+        {% assign matched_category = site.data.categories | where: "name", category_name | first %}
+        {% if matched_category %}
+          <a class="chip" href="{{ matched_category.url | relative_url }}">{{ matched_category.label | default: category_name }}</a>
+        {% else %}
+          <span class="chip">{{ category_name }}</span>
+        {% endif %}
+      {% endfor %}
+      {% for tag in page.tags %}
+        <span class="chip chip-muted">#{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </header>
+
+  <section class="panel rich-content">
+    {{ content }}
+  </section>
+</article>

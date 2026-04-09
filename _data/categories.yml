@@ -1,0 +1,24 @@
+- name: D
+  label: Development
+  slug: d
+  url: /categories/d/
+- name: CW
+  label: CTF/Wargame
+  slug: cw
+  url: /categories/cw/
+- name: BB
+  label: BugBounty
+  slug: bb
+  url: /categories/bb/
+- name: BD
+  label: Blog Docs
+  slug: bd
+  url: /categories/bd/
+- name: PC
+  label: Papers & Conferences
+  slug: pc
+  url: /categories/pc/
+- name: CC
+  label: Contests & Certifications
+  slug: cc
+  url: /categories/cc/
