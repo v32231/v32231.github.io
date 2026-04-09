@@ -6,3 +6,18 @@ url: https://v32231.github.io
 remote_theme: v32231/v32231.github.io_theme
 plugins: 
 - jekyll-remote-theme
+navigation_header:
+- title: Home
+  url: /
+- title: Development
+  url: /categories/d/
+- title: CTF/Wargame
+  url: /categories/cw/
+- title: BugBounty
+  url: /categories/bb/
+- title: Blog/TechDocs
+  url: /categories/bd/
+- title: Contests/Certifications
+  url: /categories/cc/
+- title: Papers/Conferences
+  url: /categories/pc/

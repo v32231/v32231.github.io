@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Blog Docs
+title: Blog/TechDocs
 permalink: /categories/bd/
 category_name: BD
 ---

@@ -11,14 +11,14 @@
   slug: bb
   url: /categories/bb/
 - name: BD
-  label: Blog Docs
+  label: Blog/TechDocs
   slug: bd
   url: /categories/bd/
 - name: PC
-  label: Papers & Conferences
+  label: Papers/Conferences
   slug: pc
   url: /categories/pc/
 - name: CC
-  label: Contests & Certifications
+  label: Contests/Certifications
   slug: cc
   url: /categories/cc/
