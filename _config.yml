@@ -1,6 +1,8 @@
-title: v32231's blog
-description: GitHub Pages 개인 블로그
-theme: minima
+title: v32231's tiny blog
+description: V32231의 개인 블로그
 lang: ko
 timezone: Asia/Seoul
 url: https://v32231.github.io
+remote_theme: v32231/v32231.github.io_theme
+plugins: 
+- jekyll-remote-theme
