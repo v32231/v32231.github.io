@@ -8,7 +8,7 @@ title: Home
 </div>
 
 <details class="career-box"> 
-<summary><span class="career-title">Career</span></summary>
+<summary><span class="career-title">Experience</span></summary>
 <div markdown="1">
 
 ### Development
@@ -68,19 +68,19 @@ Nothing yet
 ### 희망직무 관련 채용 공고
 - [넷마블] 게임 보안 담당자 모집
     - 링크: https://career.netmarble.com/announce/view?anno_id=1741
-    ![image](./image/careerpath1)
+    ![image](./image/careerpath1.png)
 - [넥슨] PC 게임핵 분석 대응 담당자
     - 링크: https://www.wanted.co.kr/wd/207985
-    ![image](./image/careerpath2)
+    ![image](./image/careerpath2.png)
 - [넥슨] PC 게임보안(분석) 담당자
     - 링크: https://www.wanted.co.kr/wd/157146
-    ![image](./image/careerpath3)
+    ![image](./image/careerpath3.png)
 - [넷마블] 애플리케이션 취약점 진단 및 모의해킹 담당자 모집
     - 링크: https://career.netmarble.com/announce/view?anno_id=1698
-    ![image](./image/careerpath4)
+    ![image](./image/careerpath4.png)
 - [크래프톤] Anti-Cheat Reverse Engineer (3년 이상)
     - 링크: https://gamejobs.co/PUBG-STUDIOS-Anti-Cheat-Reverse-Engineer-3%EB%85%84-%EC%9D%B4%EC%83%81-at-PUBG
-    ![image](./image/careerpath5)
+    ![image](./image/careerpath5.png)
 
 ### 필요 역량
 1. 리버싱 및 프로그램 분석 능력
