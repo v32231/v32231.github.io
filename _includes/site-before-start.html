@@ -20,6 +20,14 @@
   font-display: swap;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+}
+
 .profile-img {
   width: 140px;
   height: 140px;
@@ -57,10 +65,15 @@
 
 .intro-text {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
-body{
+body,
+.typeset,
+.header,
+.nav a,
+summary,
+h1, h2, h3, h4, h5, h6{
   font-family: 'PyeojinGothic', sans-serif;
 }
 
