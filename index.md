@@ -5,6 +5,10 @@ title: Home
 <div class="intro-box">
   <img src="./image/profile.jpeg" alt="profile" class="profile-img">
   <p class="intro-text">안녕하세요! v32231의 개인 블로그입니다!</p>
+  <p></p>
+  <p class="intro-text">이름: 박다현</p>
+  <p class="intro-text">닉네임: v32231</p>
+  <p class="intro-text">[GitHub 바로가기](https://github.com/v32231)</p>
 </div>
 
 <details class="career-box"> 

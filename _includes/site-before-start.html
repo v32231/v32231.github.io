@@ -55,6 +55,16 @@ html {
   white-space: nowrap;
 }
 
+.header .item--nav:not(:first-child) a {
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+
+.header .item--nav:not(:first-child) a:hover,
+.header .item--nav:not(:first-child) a:focus {
+  transform: scale(1.06);
+}
+
 .header .container {
   display: flex;
   align-items: center;
