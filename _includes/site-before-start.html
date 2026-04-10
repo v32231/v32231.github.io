@@ -25,23 +25,21 @@ html {
   font-display: swap;
 }
 
+.header .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .list--nav {
+  justify-content: flex-end;
+}
+
 .header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-}
-
-.header .nav--header {
-  display: inline-block;
-  padding: 0.8rem 1rem;
-  border-radius: 18px;
   background: #d63384;
-}
-
-.header .list--nav {
-  justify-content: flex-start;
+  backdrop-filter: blur(8px);
 }
 
 .profile-img {
