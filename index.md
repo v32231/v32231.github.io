@@ -50,3 +50,46 @@ Nothing yet
 
 </div>
 </details>
+
+<details class="career-box"> 
+<summary><span class="career-title">Career Path</span></summary>
+<div markdown="1">
+
+
+### 나의 가치 우선순위
+- 높은 우선순위: 재미, 안정성
+- 낮은 우선순위: 연봉, 근무지역
+
+### 희망 회사
+- 넥슨
+- 넷마블
+- 크래프톤
+
+### 희망직무 관련 채용 공고
+- [넷마블] 게임 보안 담당자 모집
+    - 링크: https://career.netmarble.com/announce/view?anno_id=1741
+    ![image](./image/careerpath1)
+- [넥슨] PC 게임핵 분석 대응 담당자
+    - 링크: https://www.wanted.co.kr/wd/207985
+    ![image](./image/careerpath2)
+- [넥슨] PC 게임보안(분석) 담당자
+    - 링크: https://www.wanted.co.kr/wd/157146
+    ![image](./image/careerpath3)
+- [넷마블] 애플리케이션 취약점 진단 및 모의해킹 담당자 모집
+    - 링크: https://career.netmarble.com/announce/view?anno_id=1698
+    ![image](./image/careerpath4)
+- [크래프톤] Anti-Cheat Reverse Engineer (3년 이상)
+    - 링크: https://gamejobs.co/PUBG-STUDIOS-Anti-Cheat-Reverse-Engineer-3%EB%85%84-%EC%9D%B4%EC%83%81-at-PUBG
+    ![image](./image/careerpath5)
+
+### 필요 역량
+1. 리버싱 및 프로그램 분석 능력
+2. 게임 보안 취약점 분석 및 대응 능력
+3. 핵·어뷰징·비정상 행위 분석 능력
+
+
+-> 내가 지금 해야 할 것 1가지
+게임 핵 분석 능력 경험 쌓기
+
+</div>
+</details>
