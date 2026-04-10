@@ -20,6 +20,27 @@
   font-display: swap;
 }
 
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.career-box summary::after {
+  content: "▸";
+  margin-left: 0.5rem;
+}
+
+.career-box[open] summary::after {
+  content: "▾";
+}
+
+.career-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 body{
   font-family: 'PyeojinGothic', sans-serif;
 }

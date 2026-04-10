@@ -2,11 +2,11 @@
 layout: page
 title: Home
 ---
-![image](./image/profile.jpeg)
+<img src="./image/profile.jpeg" alt="profile" class="profile-img">
 안녕하세요! v32231의 개인 블로그입니다!
 
-<details> 
-<summary> career </summary>
+<details class="career-box"> 
+<summary><span class="career-title">Career</span></summary>
 <div markdown="1">
 
 ### Development
