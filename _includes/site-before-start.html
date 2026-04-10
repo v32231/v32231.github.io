@@ -39,18 +39,31 @@ html {
 
 .header .container {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
 }
 
 .header .nav--header {
-  margin-left: auto;
-  margin-right: 0;
-  width: fit-content;
+  width: 100%;
+  margin: 0;
 }
 
 .header .list--nav {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header .item--nav:first-child {
+  margin-right: auto;
+}
+
+.header .item--nav:first-child a::after {
+  content: "|";
+  margin-left: 1rem;
+  color: #ffffff;
 }
 
 .profile-img {
@@ -106,6 +119,13 @@ h1, h2, h3, h4, h5, h6{
 .nav a,
 .toc a {
   color: #ffebf5;
+}
+
+.header .nav a,
+.header .nav a:visited,
+.header .nav a:hover,
+.header .nav a:focus {
+  color: #ffffff;
 }
 
 </style>
