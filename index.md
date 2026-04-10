@@ -3,11 +3,11 @@ layout: page
 title: Home
 ---
 
-<ul>
-{% for post in site.posts limit: 10 %}
-  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+안녕하세요! v32231의 개인 블로그입니다!
+
+<details> 
+<summary> career </summary>
+<div markdown="1">
 
 ### Development
 Nothing yet
@@ -45,3 +45,6 @@ Nothing yet
 
 ### Contest/Certificate
 Nothing yet
+
+</div>
+</details>
