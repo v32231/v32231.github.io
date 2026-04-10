@@ -2,7 +2,7 @@
 layout: page
 title: Home
 ---
-
+![image](./image/profile.jpeg)
 안녕하세요! v32231의 개인 블로그입니다!
 
 <details> 
