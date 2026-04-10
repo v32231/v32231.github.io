@@ -37,6 +37,24 @@ html {
   font-weight: 700;
 }
 
+.header .item--nav:first-child {
+  margin-right: auto;
+}
+
+.header .item--nav:first-child a::after {
+  content: "|";
+  margin-left: 1rem;
+  color: #ffffff;
+}
+
+.header .item--nav {
+  flex: 0 0 auto;
+}
+
+.header .item--nav a {
+  white-space: nowrap;
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -55,16 +73,6 @@ html {
   justify-content: flex-start;
   gap: 0.75rem;
   flex-wrap: nowrap;
-}
-
-.header .item--nav:first-child {
-  margin-right: auto;
-}
-
-.header .item--nav:first-child a::after {
-  content: "|";
-  margin-left: 1rem;
-  color: #ffffff;
 }
 
 .profile-img {
