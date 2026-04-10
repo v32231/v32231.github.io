@@ -7,6 +7,8 @@ remote_theme: v32231/v32231.github.io_theme
 plugins: 
 - jekyll-remote-theme
 navigation_header:
+- title: v32231's tiny blog
+  url: /
 - title: Home
   url: /
 - title: Development
