@@ -132,12 +132,32 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.15rem;
 }
 
 .intro-text {
   margin: 0;
   font-size: 1.3rem;
+}
+
+.typeset .intro-text {
+  margin: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  line-height: 1.35;
+}
+
+.typeset .intro-text a,
+.typeset .intro-text a:visited {
+  color: #d63384;
+  background-image: none;
+  text-shadow: none;
+}
+
+.typeset .intro-text a:hover,
+.typeset .intro-text a:focus {
+  color: #b91c6b;
+  background-image: none;
 }
 
 body,
