@@ -9,8 +9,6 @@ plugins:
 navigation_header:
 - title: v32231's tiny blog
   url: /
-- title: Home
-  url: /
 - title: Development
   url: /categories/d/
 - title: CTF/Wargame
