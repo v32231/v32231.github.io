@@ -57,12 +57,26 @@ html {
 
 .header .item--nav:not(:first-child) a {
   display: inline-block;
+  position: relative;
+  transition: color 0.18s ease;
+}
+
+.header .item--nav:not(:first-child) a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 0.18s ease;
 }
 
-.header .item--nav:not(:first-child) a:hover,
-.header .item--nav:not(:first-child) a:focus {
-  transform: scale(1.06);
+.header .item--nav:not(:first-child) a:hover::after,
+.header .item--nav:not(:first-child) a:focus::after {
+  transform: scaleX(1);
 }
 
 .header .container {
