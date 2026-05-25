@@ -2,8 +2,8 @@
 layout: post
 title: "git 명령어 연습"
 date: 2026-05-25 09:00:00 +0900
-categories: ["BD"]
-tags: [blog, techdoc, git]
+categories: ["D"]
+tags: [development, git]
 ---
 Learn Git Branching 이라는 웹에서 git 명령어를 배울 수 있는 사이트에서 git 명령어를 공부해봤다.
 [Learn Git Branching](https://chatgpt.com/c/6a13a67f-9500-83e8-83ba-328bc466fef0)
