@@ -235,4 +235,66 @@ h1, h2, h3, h4, h5, h6{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #8f0f52 50%) !important;
 }
 
+.typeset table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.25rem 0 1.75rem;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.typeset table thead,
+.typeset table tbody,
+.typeset table tr {
+  width: 100%;
+}
+
+.typeset table th,
+.typeset table td {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #f1bad5;
+  vertical-align: top;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.typeset table th {
+  background: #ffe5f3;
+  color: #8f0f52;
+  font-weight: 700;
+  text-align: left;
+}
+
+.typeset table td {
+  background: #ffffff;
+}
+
+.typeset table tbody tr:nth-child(even) td {
+  background: #fff7fb;
+}
+
+.typeset table tbody tr:hover td {
+  background: #fff0f8;
+}
+
+.typeset table th:first-child,
+.typeset table td:first-child {
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .typeset table {
+    font-size: 0.88rem;
+  }
+
+  .typeset table th,
+  .typeset table td {
+    padding: 0.55rem 0.7rem;
+  }
+}
+
 </style>
