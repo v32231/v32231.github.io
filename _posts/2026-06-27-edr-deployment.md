@@ -29,8 +29,9 @@ Elastic은 다양한 데이터를 수집, 저장, 검색하고 시각화하는 �
 
 ## 실습 환경
 
-| Endpoint OS | macOS 26.5.1 |
+| 항목 | 내용 |
 | --- | --- |
+| Endpoint OS | macOS 26.5.1 |
 | CPU 아키텍처 | arm64 |
 | Elastic Defend Integration | 9.4.0 |
 | Agent | Elastic Agent 9.4.2 |

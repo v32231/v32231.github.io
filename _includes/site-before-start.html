@@ -261,11 +261,14 @@ h1, h2, h3, h4, h5, h6{
   max-width: 100%;
   margin: 1.25rem 0 1.75rem;
   overflow-x: auto;
-  border-collapse: collapse;
+  border: 1px solid #eadce3;
+  border-radius: 6px;
+  border-collapse: separate;
   border-spacing: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-family: inherit;
   font-size: 0.95rem;
   line-height: 1.55;
+  background: #ffffff;
 }
 
 .typeset table thead,
@@ -276,35 +279,129 @@ h1, h2, h3, h4, h5, h6{
 
 .typeset table th,
 .typeset table td {
-  padding: 0.65rem 0.85rem;
-  border: 1px solid #f1bad5;
-  vertical-align: top;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-bottom: 1px solid #eee5e9;
+  vertical-align: middle;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 
 .typeset table th {
-  background: #ffe5f3;
-  color: #8f0f52;
+  background: #faf6f8;
+  color: #5f2443;
+  border-bottom: 2px solid #d63384;
   font-weight: 700;
   text-align: left;
 }
 
-.typeset table td {
-  background: #ffffff;
-}
-
 .typeset table tbody tr:nth-child(even) td {
-  background: #fff7fb;
+  background: #fdfbfd;
 }
 
 .typeset table tbody tr:hover td {
-  background: #fff0f8;
+  background: #fff5fa;
+}
+
+.typeset table tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 .typeset table th:first-child,
 .typeset table td:first-child {
   white-space: nowrap;
+  font-weight: 600;
+}
+
+/* Code blocks */
+.typeset div.highlighter-rouge {
+  margin: 1.25rem 0 1.75rem;
+  overflow: hidden;
+  border: 1px solid #eadce3;
+  border-top: 3px solid #d63384;
+  border-radius: 6px;
+  background: #fbfafb;
+}
+
+.typeset div.highlighter-rouge::before {
+  display: block;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px solid #eee5e9;
+  color: #765466;
+  background: #f7f3f5;
+  font-family: 'PyeojinGothic', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.typeset div.language-bash.highlighter-rouge::before,
+.typeset div.language-shell.highlighter-rouge::before {
+  content: "TERMINAL";
+}
+
+.typeset div.language-text.highlighter-rouge::before {
+  content: "TEXT";
+}
+
+.typeset div.language-c.highlighter-rouge::before {
+  content: "C";
+}
+
+.typeset div.language-cpp.highlighter-rouge::before {
+  content: "C++";
+}
+
+.typeset div.language-python.highlighter-rouge::before {
+  content: "PYTHON";
+}
+
+.typeset div.highlighter-rouge .highlight {
+  margin: 0;
+  background: transparent;
+}
+
+.typeset div.highlighter-rouge pre {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  border: 0;
+  background: transparent;
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.typeset div.highlighter-rouge pre code {
+  padding: 0;
+  border: 0;
+  color: #29252a;
+  background: transparent;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.typeset :not(pre) > code {
+  padding: 0.12em 0.38em;
+  border: 1px solid #eed8e3;
+  border-radius: 4px;
+  color: #8f0f52;
+  background: #fbf1f6;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.88em;
+  line-height: inherit;
+}
+
+.typeset div.highlighter-rouge pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.typeset div.highlighter-rouge pre::-webkit-scrollbar-thumb {
+  border: 2px solid #fbfafb;
+  border-radius: 4px;
+  background: #c9b8c1;
 }
 
 @media (max-width: 720px) {
@@ -315,6 +412,14 @@ h1, h2, h3, h4, h5, h6{
   .typeset table th,
   .typeset table td {
     padding: 0.55rem 0.7rem;
+  }
+
+  .typeset div.highlighter-rouge pre {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .typeset div.highlighter-rouge pre code {
+    font-size: 0.82rem;
   }
 }
 
