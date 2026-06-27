@@ -219,6 +219,26 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 
+/* Keep ordered-list numbers inside the post content column. */
+.typeset ol {
+  padding-left: 2.5rem;
+}
+
+.typeset ol li {
+  position: relative;
+  margin-left: 0;
+}
+
+.typeset ol li::before {
+  right: 100%;
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+.typeset ol li ol {
+  margin-left: 0;
+}
+
 .typeset p a,
 .typeset li a {
   color: #b31268 !important;
