@@ -743,18 +743,35 @@ a:focus {
   background: #eef7ff;
 }
 
-.intro-box::before {
+.intro-sparkle {
   position: absolute;
   z-index: 0;
-  top: 2rem;
-  right: 3.5rem;
-  color: rgba(37, 99, 235, 0.42);
-  content: "✦  ✧";
-  font-size: 1.35rem;
-  letter-spacing: 1rem;
+  display: block;
+  color: rgba(37, 99, 235, 0.38);
   pointer-events: none;
-  text-shadow: 2.8rem 3.7rem 0 rgba(14, 165, 233, 0.22);
-  animation: intro-twinkle 2.8s ease-in-out infinite;
+  animation: intro-twinkle 3.2s ease-in-out infinite;
+}
+
+.intro-sparkle--one {
+  top: 16%;
+  right: 6%;
+  font-size: 1.45rem;
+}
+
+.intro-sparkle--two {
+  top: 48%;
+  right: 12%;
+  color: rgba(14, 165, 233, 0.28);
+  font-size: 1.05rem;
+  animation-delay: -1.05s;
+}
+
+.intro-sparkle--three {
+  right: 4%;
+  bottom: 14%;
+  color: rgba(96, 165, 250, 0.25);
+  font-size: 0.8rem;
+  animation-delay: -2.1s;
 }
 
 .intro-box::after {
@@ -816,6 +833,7 @@ a:focus {
   position: relative;
   z-index: 1;
   display: flex;
+  max-width: 55%;
   flex-direction: column;
   gap: 0.22rem;
   padding-left: 1.15rem;
@@ -1328,6 +1346,26 @@ a:focus {
     border-radius: 50%;
   }
 
+  .intro-info {
+    max-width: 100%;
+  }
+
+  .intro-sparkle--one {
+    top: 10%;
+    right: 8%;
+  }
+
+  .intro-sparkle--two {
+    top: 20%;
+    right: 20%;
+  }
+
+  .intro-sparkle--three {
+    top: 31%;
+    right: 10%;
+    bottom: auto;
+  }
+
   .recent-post-grid {
     grid-template-columns: 1fr;
   }
@@ -1372,7 +1410,7 @@ a:focus {
     scroll-behavior: auto;
   }
 
-  .intro-box::before {
+  .intro-sparkle {
     animation: none;
   }
 
