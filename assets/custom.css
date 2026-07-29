@@ -740,30 +740,74 @@ a:focus {
   overflow: hidden;
   border: 1px solid #c9e3f7;
   border-radius: 22px;
-  background:
-    radial-gradient(circle at 90% 10%, rgba(125, 211, 252, 0.35), transparent 14rem),
-    linear-gradient(135deg, #f4faff 0%, #eaf5ff 100%);
+  background: #eef7ff;
+}
+
+.intro-box::before {
+  position: absolute;
+  z-index: 0;
+  top: 2rem;
+  right: 3.5rem;
+  color: rgba(37, 99, 235, 0.42);
+  content: "✦  ✧";
+  font-size: 1.35rem;
+  letter-spacing: 1rem;
+  pointer-events: none;
+  text-shadow: 2.8rem 3.7rem 0 rgba(14, 165, 233, 0.22);
+  animation: intro-twinkle 2.8s ease-in-out infinite;
 }
 
 .intro-box::after {
   position: absolute;
-  right: -3rem;
-  bottom: -5rem;
-  width: 13rem;
-  height: 13rem;
-  border: 1.5rem solid rgba(37, 99, 235, 0.06);
-  border-radius: 50%;
+  z-index: 0;
+  inset: 0;
   content: "";
+  pointer-events: none;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    transparent 42%,
+    rgba(255, 255, 255, 0.72) 50%,
+    transparent 58%,
+    transparent 100%
+  );
+  transform: translateX(-120%);
+  animation: intro-shimmer 5.5s ease-in-out infinite;
 }
 
-.profile-img {
+@keyframes intro-shimmer {
+  0%,
+  58% {
+    transform: translateX(-120%);
+  }
+
+  82%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes intro-twinkle {
+  0%,
+  100% {
+    opacity: 0.38;
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.08) rotate(3deg);
+  }
+}
+
+.typeset .profile-img {
   position: relative;
   z-index: 1;
   width: clamp(120px, 18vw, 165px);
   height: clamp(120px, 18vw, 165px);
   flex: 0 0 auto;
-  border: 5px solid rgba(255, 255, 255, 0.94);
-  border-radius: 26px;
+  border: 0;
+  border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--shadow-md);
 }
@@ -785,7 +829,7 @@ a:focus {
   width: 4px;
   border-radius: 999px;
   content: "";
-  background: linear-gradient(180deg, var(--blue-600), var(--sky-500));
+  background: var(--blue-500);
 }
 
 .typeset .intro-text {
@@ -1278,10 +1322,10 @@ a:focus {
     border-radius: 18px;
   }
 
-  .profile-img {
+  .typeset .profile-img {
     width: 108px;
     height: 108px;
-    border-radius: 20px;
+    border-radius: 50%;
   }
 
   .recent-post-grid {
@@ -1326,6 +1370,14 @@ a:focus {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .intro-box::before {
+    animation: none;
+  }
+
+  .intro-box::after {
+    display: none;
   }
 
   *,
