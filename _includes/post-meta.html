@@ -1,0 +1,28 @@
+{% assign date_format = site.date_format | default: "%Y.%m.%d" %}
+
+<div class="post-meta" aria-label="게시글 정보">
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-meta__date">
+    {{ page.date | date: date_format }}
+  </time>
+
+  {% if page.categories %}
+    <span class="post-meta__divider" aria-hidden="true"></span>
+    <div class="post-meta__categories">
+      {% for category in page.categories %}
+        {% assign category_info = site.data.categories | where: "name", category | first %}
+        <a class="category-chip" href="{{ category_info.url | relative_url }}">
+          {{ category_info.label | default: category }}
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.tags %}
+    <span class="post-meta__divider" aria-hidden="true"></span>
+    <div class="post-meta__tags" aria-label="태그">
+      {% for tag in page.tags %}
+        <a class="tag-chip" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

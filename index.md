@@ -12,6 +12,22 @@ title: Home
   </div>
 </div>
 
+<section class="home-recent" aria-labelledby="recent-posts-title">
+  <div class="section-heading">
+    <h2 id="recent-posts-title">최근 글</h2>
+    <a class="section-heading__link" href="{{ '/tags/' | relative_url }}">태그로 둘러보기 →</a>
+  </div>
+
+  <div class="recent-post-grid">
+    {% for post in site.posts limit: 6 %}
+      <a class="recent-post-card" href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+        <strong>{{ post.title }}</strong>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
 <details class="career-box"> 
 <summary><span class="career-title">Experience</span></summary>
 <div markdown="1">

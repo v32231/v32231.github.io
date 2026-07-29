@@ -1,0 +1,25 @@
+{% if site.navigation_header %}
+<nav class="nav nav--header" aria-label="주요 메뉴">
+  <ul class="list list--nav" id="site-navigation">
+    {% for item in site.navigation_header %}
+      {% if item.url contains '://' %}
+        {% assign url = item.url %}
+      {% else %}
+        {% assign url = item.url | relative_url %}
+      {% endif %}
+
+      <li class="item item--nav{% if item.url == page.url %} item--current{% endif %}">
+        <a href="{{ url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <button class="button button--nav" type="button" aria-label="메뉴 열기" aria-controls="site-navigation" aria-expanded="false">
+    <span class="nav-toggle-line"></span>
+    <span class="nav-toggle-line"></span>
+    <span class="nav-toggle-line"></span>
+  </button>
+</nav>
+{% else %}
+  {% include nav-default.html %}
+{% endif %}

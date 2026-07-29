@@ -3,6 +3,9 @@ description: V32231의 개인 블로그
 lang: ko
 timezone: Asia/Seoul
 url: https://v32231.github.io
+date_format: "%Y.%m.%d"
+manifest:
+  theme_color: "#2563eb"
 remote_theme: v32231/v32231.github.io_theme
 plugins: 
 - jekyll-remote-theme
@@ -21,3 +24,5 @@ navigation_header:
   url: /categories/cc/
 - title: Papers/Conferences
   url: /categories/pc/
+- title: Tags
+  url: /tags/
