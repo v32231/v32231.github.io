@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "퍼징(Fuzzing): 개념부터 퍼저 종류까지"
+title: "Fuzzing & Fuzzer"
 date: 2026-08-12 09:00:00 +0900
-categories: ["BD"]
+categories: ["BB"]
 tags: [security, fuzzing, software-testing]
 ---
 
