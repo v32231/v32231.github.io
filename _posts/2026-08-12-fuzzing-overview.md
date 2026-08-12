@@ -8,7 +8,7 @@ tags: [security, fuzzing, software-testing]
 
 다음 학기 캡스톤에서 퍼징 관련 프로젝트에 합류할 예정이라 퍼징에 대해서 좀 더 알아봐야겠다고 생각해서 이 포스트를 올리게 되었다. 퍼징은 입문 자체는 쉬운데 좀만 깊게 들어가면 너무 어려운 것 같다. 퍼징 잘 쓰시는 분들 존경합니다..
 
-기본적으로 용어나 어느 정도의 개념은 ’The Art, Science, and Engineering of Fuzzing: A Survey’라는 논문과 Google에서 공개한 퍼징 관련 깃허브 자료를 참고했다. 해당 논문은 초록에서 현대 퍼저의 성능을 뒷받침하는 관련 문헌과 퍼징의 실무(art), 과학(science), 공학(engineering) 분야의 다양한 발전을 체계적으로 검토하고, 모델 퍼저의 각 단계에서 이루어지는 설계 결정들을 탐구한다고 밝힌다.
+기본적으로 용어나 어느 정도의 개념은 ’The Art, Science, and Engineering of Fuzzing: A Survey’라는 논문과 Google에서 공개한 퍼징 관련 깃허브 자료를 참고했다. 해당 논문은 초록에서 현대 퍼저의 성능을 뒷받침하는 관련 문헌과 퍼징의 실무(art), 과학(science), 공학(engineering) 분야의 다양한 발전을 체계적으로 검토하고, 모델 퍼저의 각 단계에서 이루어지는 설계 결정들을 탐구한다고 설명한다.
 
 # 용어
 
