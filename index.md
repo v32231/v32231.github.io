@@ -10,10 +10,6 @@ title: Home
     <p class="intro-text">닉네임: v32231</p>
     <p class="intro-text"><a href="https://github.com/v32231">GitHub 바로가기</a></p>
   </div>
-
-  <span class="intro-sparkle intro-sparkle--one" aria-hidden="true">✦</span>
-  <span class="intro-sparkle intro-sparkle--two" aria-hidden="true">✧</span>
-  <span class="intro-sparkle intro-sparkle--three" aria-hidden="true">✦</span>
 </div>
 
 <section class="home-recent" aria-labelledby="recent-posts-title">

@@ -7,7 +7,6 @@ permalink: /tags/
 {% assign sorted_tags = site.tags | sort %}
 
 <div class="page-heading">
-  <p class="page-heading__eyebrow">EXPLORE</p>
   <p class="page-heading__description">관심 있는 태그를 눌러 관련 글을 모아보세요.</p>
 </div>
 
