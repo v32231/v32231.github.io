@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2026 핵테온 후기"
+title: "[review] 2026 핵테온 세종"
 date: 2026-05-13 09:00:00 +0900
 categories: ["CW"]
 tags: [ctf, wargame, reversing, writeup]
