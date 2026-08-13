@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[review]Towards Automating Data Access Permissions in AI Agents"
+title: "[review] Towards Automating Data Access Permissions in AI Agents"
 date: 2026-05-28 09:00:00 +0900
 categories: ["PC"]
 tags: [paper, review]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[review]DEF CON 33 - 해커를 위한 정규식"
+title: "[review] DEF CON 33 - 해커를 위한 정규식"
 date: 2026-05-29 09:00:00 +0900
 categories: ["PC"]
 tags: [conference, review, defcon]
