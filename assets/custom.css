@@ -2096,6 +2096,13 @@ a:focus,
     background: #fff;
   }
 
+  .container,
+  .post-layout {
+    width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .main,
   .layout-page.home .main {
     padding: 2rem 0 4rem;
